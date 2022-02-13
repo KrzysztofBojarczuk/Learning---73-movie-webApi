@@ -10,6 +10,9 @@ namespace MovieWebApplication1.Automapper
         {
             CreateMap<MovieCreateDto, Movie>();
             CreateMap<Movie, MovieGetDto>();
+
+            CreateMap<ActorCreateDto,Actor>();
+            CreateMap<Actor, ActorGetDto>();
         }
     }
 }
