@@ -6,9 +6,9 @@ namespace MovieWebApplication1.IRepository
     {
         Task<List<Movie>> GetAll();
         Task<Movie> CreateMvoe(Movie movie);
-        Task<Movie> GetMovieById(int id);
+        Task<Movie> GetMovieById(int movieId);
         Task<Movie> MovieUpdate(Movie movieUpdate);
-        Task<Movie> MovieDelete(int id);
+        Task<Movie> MovieDelete(int movieId);
         
     }
 }

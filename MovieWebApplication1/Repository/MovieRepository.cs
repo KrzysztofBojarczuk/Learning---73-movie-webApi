@@ -27,9 +27,9 @@ namespace MovieWebApplication1.Repository
             return await _ctx.Movies.ToListAsync();
         }
 
-        public async Task<Movie> GetMovieById(int id)
+        public async Task<Movie> GetMovieById(int movieId)
         {
-            var movie = await _ctx.Movies.FirstOrDefaultAsync(h => h.MovieId == id);
+            var movie = await _ctx.Movies.FirstOrDefaultAsync(h => h.MovieId == movieId);
             if (movie == null)
             {
                 return null;
@@ -39,9 +39,9 @@ namespace MovieWebApplication1.Repository
             
         }
 
-        public async Task<Movie> MovieDelete(int id)
+        public async Task<Movie> MovieDelete(int movieId)
         {
-            var movie = await _ctx.Movies.FirstOrDefaultAsync(h => h.MovieId == id);
+            var movie = await _ctx.Movies.FirstOrDefaultAsync(h => h.MovieId == movieId);
            
             if (movie == null)
             {
