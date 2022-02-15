@@ -10,5 +10,6 @@ namespace MovieWebApplication1.Data
         }
 
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Actor> Acotrs { get; set; }
     }
 }
